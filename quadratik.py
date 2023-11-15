@@ -22,13 +22,13 @@ def cal_d(a, b, c):
 
 def solve_quad(a, b, c):
     """Эта функция решает квадратное уравнение"""
-    D = cal_d(a, b, c)
-    print('Дискриминат =', D)
-    if D > 0:
-        x1 = (-b + D**(1/2)) / (2*a)
-        x2 = (-b - D**(1/2)) / (2*a)
+    discriminant = cal_d(a, b, c)
+    print('Дискриминат =', discriminant)
+    if discriminant > 0:
+        x1 = (-b + discriminant**(1/2)) / (2*a)
+        x2 = (-b - discriminant**(1/2)) / (2*a)
         return x1, x2
-    elif D == 0:
+    elif discriminant == 0:
         x = (-b) / (2*a)
         return x
     else:
@@ -36,10 +36,10 @@ def solve_quad(a, b, c):
         return x
 
 
-print(solve_quad(a1, b1, c1))
-print(solve_quad(a2, b2, c2))
-print(solve_quad(a3, b3, c3))
-print(solve_quad(a4, b4, c4))
+print("Результат =", solve_quad(a1, b1, c1))
+print("Результат =", solve_quad(a2, b2, c2))
+print("Результат =", solve_quad(a3, b3, c3))
+print("Результат =", solve_quad(a4, b4, c4))
 
 
 
