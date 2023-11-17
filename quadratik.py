@@ -13,6 +13,7 @@ a4 = 2
 b4 = 4
 c4 = 2
 
+# todo: add main function()
 
 def cal_d(a, b, c):
     """Эта функция вычисляет дискриминант"""
@@ -43,5 +44,5 @@ print("Результат =", solve_quad(a4, b4, c4))
 
 
 
-
+# todo: add __name__ = "__main__" structure, show how to use.
 
