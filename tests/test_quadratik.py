@@ -23,3 +23,9 @@ def test_multiple_abc_disc(a_test, b_test, c_test, target_disc):
 
 
 # todo: add tests for q.solve_quad function
+
+def test_solve_quad(a_test: float, b_test: float, c_test: float, target_solve_quad):
+    output_solve_quad = q.solve_quad(a_test, b_test, c_test)
+    assert output_solve_quad == target_solve_quad
+
+
