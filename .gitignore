@@ -1,4 +1,5 @@
 /file_only_for_me.py
 /venv/
 /.idea/
-/__pycache__/
+*__pycache__*
+/.idea/
